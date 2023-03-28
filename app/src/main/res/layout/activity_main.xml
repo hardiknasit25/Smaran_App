@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/artboard">
+
+    <EditText
+        android:id="@+id/edTime"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="30dp"
+        android:inputType="time"
+        android:hint="Set Time Here"
+        android:gravity="center"
+        tools:ignore="Autofill,HardcodedText,SpUsage"/>
+
+    <Button
+        android:id="@+id/btSet"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F800CF"
+        android:text="Set Time"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@id/edTime"
+        app:layout_constraintStart_toStartOf="@id/edTime"
+        app:layout_constraintTop_toBottomOf="@id/edTime"
+        tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F800CF"
+        android:text="STOP"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@id/btSet"
+        app:layout_constraintStart_toStartOf="@id/btSet"
+        app:layout_constraintTop_toBottomOf="@id/btSet"
+        tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
